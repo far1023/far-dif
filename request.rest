@@ -1,0 +1,130 @@
+###
+GET http://localhost:8000/api/allowance
+
+###
+GET http://localhost:8000/api/allowance/1
+
+###
+POST http://localhost:8000/api/allowance
+Content-Type: application/json
+{
+	"name": "transport", 
+	"percentage_on_basic": 10, 
+	"fix_amount": 
+}
+
+###
+PATCH http://localhost:8000/api/allowance/1
+Content-Type: application/json
+{
+	"name": "transportation", 
+	"percentage_on_basic": 15, 
+	"fix_amount": 
+}
+
+###
+DELETE http://localhost:8000/api/allowance/1
+
+# ============================================================
+
+###
+GET http://localhost:8000/api/employee
+
+###
+GET http://localhost:8000/api/employee/1
+
+###
+POST http://localhost:8000/api/employee
+Content-Type: application/json
+{
+	"name": "fuadagil", 
+	"pob": "this city",
+	"dob": "1945-08-17", 
+	"gender": "male", 
+	"contact": "+62761", 
+	"emai": "fuadagil@mail.com",
+	"address": ""
+}
+
+###
+PATCH http://localhost:8000/api/employee/1
+Content-Type: application/json
+{
+	"name": "fuadagil", 
+	"pob": "this city",
+	"dob": "1945-08-17", 
+	"gender": "male", 
+	"contact": "0761", 
+	"emai": "fuadagil@gmail.com",
+	"address": ""
+}
+
+###
+DELETE http://localhost:8000/api/employee/1
+
+# ============================================================
+
+###
+GET http://localhost:8000/api/contract
+
+###
+GET http://localhost:8000/api/contract/1
+
+###
+POST http://localhost:8000/api/contract
+Content-Type: application/json
+{
+	"contract_no": "lorem88ipsum", 
+	"employee_id": 1, 
+	"position": "programmer", 
+	"division": "web dev", 
+	"start": "2021-01-01", 
+	"end": "2021-12-31", 
+	"basic_salary": 5000000
+}
+
+###
+PATCH http://localhost:8000/api/contract/1
+Content-Type: application/json
+{
+	"contract_no": "lorem88ipsum", 
+	"employee_id": 1, 
+	"position": "programmer", 
+	"division": "web dev", 
+	"start": "2021-01-01", 
+	"end": "2021-12-31", 
+	"basic_salary": 5500000
+}
+
+###
+DELETE http://localhost:8000/api/contract/1
+
+# ============================================================
+
+###
+POST http://localhost:8000/api/employee-has-allowance
+Content-Type: application/json
+{
+	"employee_id": 1, 
+	"allowances": [1]
+}
+
+# ============================================================
+
+###
+GET http://localhost:8000/api/payroll
+
+###
+GET http://localhost:8000/api/payroll/2
+
+###
+POST http://localhost:8000/api/payroll
+Content-Type: application/json
+{
+	"month": 7, 
+	"year": 2021, 
+	"employee_id": 
+}
+
+###
+DELETE http://localhost:8000/api/payroll/1
