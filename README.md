@@ -19,7 +19,7 @@ baseURL = `localhost:8000/api/` for locally or `dif-id.fuadagil.com/api/`(tested
 
 ### Endpoint list ###
 
-If you choose VS Code as your playground, I extremely recommending [REST Client Extensions](https://marketplace.visualstudio.com/itemdetails?itemName=humao.rest-client) to perform request for this project. Check `request.rest` file.
+If you choose VS Code as your playground, I am extremely recommending [REST Client Extensions](https://marketplace.visualstudio.com/itemdetails?itemName=humao.rest-client) to perform request for this project. Check `request.rest` file.
 
 URL | Method | Body | Params | Explanation
 ---|---|---|---|---
