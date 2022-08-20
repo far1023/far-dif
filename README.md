@@ -22,7 +22,7 @@ baseURL = `localhost:8000/api/` for locally or `dif-id.fuadagil.com/api/`(tested
 If you choose VS Code as your playground, I extremely recommending [REST Client Extensions](https://marketplace.visualstudio.com/itemdetails?itemName=humao.rest-client) to perform request for this project. Check `request.rest` file.
 
 URL | Method | Body | Params | Explanation
----|---|---|---|---|---
+---|---|---|---|---
 `/allowance` | GET | - | - | Get all allowance data
 `/allowance` | GET | - | `/:id` | Get allowance data by given id
 `/allowance` | POST | `{"name": <string.required>, "percentage_on_basic": <integer>, "fix_amount": <integer>}` | - | Add allowance data
